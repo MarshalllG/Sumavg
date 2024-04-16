@@ -52,6 +52,7 @@ use ieee.numeric_std.all;
 
 use work.divider_pkg.all;
 
+
 entity sumavg_dp is
    generic (
       W_BITS                                    : integer := 32;
@@ -96,13 +97,13 @@ architecture s of sumavg_dp is
    signal R_Y, in_R_Y                           : std_logic_vector(A_BITS-1 DOWNTO 0);
    signal R_D1, in_R_D1                         : std_logic_vector(W_BITS-1 DOWNTO 0);
    signal R_D2, in_R_D2                         : std_logic_vector(W_BITS-1 DOWNTO 0);
-   signal R_res, in_R_res                       : std_logic_vector(W_BITS-1 DOWNTO 0);
+   signal in_R_res, R_res                       : std_logic_vector(W_BITS-1 DOWNTO 0);
    signal CNT, in_CNT                           : std_logic_vector(K_BITS-1 DOWNTO 0);
    signal L                                     : std_logic_vector(W_BITS-1 DOWNTO 0);
    signal div_operand1, div_operand2            : std_logic_vector(W_BITS-1 DOWNTO 0);
    signal div_remainder                         : std_logic_vector(W_BITS-1 DOWNTO 0);
+   signal div_result                            : std_logic_vector(W_BITS-1 DOWNTO 0);
 
-  
    begin
    -- registers
    regs: process(rst_n, CLK)
@@ -115,7 +116,6 @@ architecture s of sumavg_dp is
          R_res <= (others => '0');
          CNT <= (others => '0');
          L <= (others => '0');
-         result <= (others => '0');
       elsif rising_edge(CLK) then
          if load_R_X = '1' then
             R_X <= in_R_X;
@@ -133,7 +133,7 @@ architecture s of sumavg_dp is
             R_res <= in_R_res;
          end if;
          if load_CNT = '1' then
-            CNT <= in_CNT; --std_logic_vector(unsigned(CNT) + 1)
+            CNT <= in_CNT;
          end if;
          if load_L = '1' then
             L <= "000000000000000000000000" & len;
@@ -144,14 +144,15 @@ architecture s of sumavg_dp is
    -- muxes
    in_R_X <= ptr1 when sel_R_X = '0' else std_logic_vector(unsigned(R_X) + 1);
    in_R_Y <= ptr2 when sel_R_Y = '0' else std_logic_vector(unsigned(R_Y) + 1);
-   in_R_res <= std_logic_vector(unsigned(R_res) + unsigned(R_D1)) when sel_R_res = '0' else
-               std_logic_vector(unsigned(R_res) + unsigned(R_D2));
+   in_R_D1 <= mem_dataout when load_R_D1 = '1';
+   in_R_D2 <= mem_dataout when load_R_D2 = '1';
    in_CNT <= (others => '0') when sel_CNT = '0' else std_logic_vector(unsigned(CNT) + 1);
-   in_R_D1 <= mem_dataout when load_R_D1 = '1' else (others => '-');
-   in_R_D2 <= mem_dataout when load_R_D2 = '1' else (others => '-');
+
+   -- acc
+   in_R_res <= std_logic_vector(unsigned(R_res) + unsigned(R_D1) + unsigned(R_D2));
 
    -- status signals
-   count_eq_L <= '1' when CNT = L else '0';
+   count_eq_L <= '1' when unsigned(CNT) = unsigned(L) else '0';
 
    div_operand1 <= R_res;
    div_operand2 <= L;
@@ -170,15 +171,15 @@ architecture s of sumavg_dp is
          operand2 => div_operand2, 
          ready => div_ready, 
          remainder => div_remainder,
-         div => R_res
+         div => div_result
       );
 	
   -- data outputs
    mem_addr <= R_X when (set_mem_addr = '1' and sel_mem_addr = '0') else 
-               R_Y when (set_mem_addr = '1' and sel_mem_addr = '1') else (others => '-'); 
+               R_Y when (set_mem_addr = '1' and sel_mem_addr = '1'); 
 
    mem_datain <= (others => '-');
 
-   result <= R_res when set_result = '1';
-      
+   result <= div_result when set_result = '1';
+   
 end s;

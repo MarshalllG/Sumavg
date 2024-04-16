@@ -74,9 +74,9 @@ entity sumavg_ctrl is
       sel_R_Y                                   : out std_logic;
       sel_R_res                                 : out std_logic;
       sel_CNT                                   : out std_logic;
-      set_result                                : out std_logic;
       set_mem_addr                              : out std_logic;   
       sel_mem_addr                              : out std_logic;
+      set_result                                : out std_logic;
       mem_ready                                 : in std_logic;
       div_abort                                 : out std_logic;
       div_start                                 : out std_logic;
@@ -88,7 +88,7 @@ entity sumavg_ctrl is
 end sumavg_ctrl;
 
 architecture behav of sumavg_ctrl is
-	type statetype is (S_INIT, S_READ_1, S_FETCH_1, S_READ_2, S_FETCH_2, S_ACC_1, S_ACC_2, S_WAIT, S_DIV);
+	type statetype is (S_INIT, S_READ_1, S_FETCH_1, S_READ_2, S_FETCH_2, S_ACC, S_START_DIV, S_WAIT_DIV, S_CHECK_DIV);
 	signal state, nextstate : statetype;
 
 
@@ -121,30 +121,30 @@ begin
 
          when S_FETCH_2 =>
             if mem_ready = '1' then
-               nextstate  <= S_ACC_1;
+               nextstate  <= S_ACC;
             else
                nextstate <= S_FETCH_2;
             end if;
     
-         when S_ACC_1 =>
-            nextstate <= S_ACC_2;
-
-         when S_ACC_2 =>
+         when S_ACC =>
             if count_eq_L = '1' then
-               nextstate <= S_WAIT;
+               nextstate <= S_START_DIV;
             else
                nextstate <= S_READ_1;
             end if;
- 
-         when S_WAIT =>
-            if div_ready = '1' then
-               nextstate <= S_DIV;
-            else
-               nextstate <= S_INIT;
-            end if;
 
-         when S_DIV =>
-            nextstate <= S_INIT;
+         when S_START_DIV =>
+            nextstate <= S_WAIT_DIV;
+
+         when S_WAIT_DIV =>
+            nextstate <= S_CHECK_DIV;
+
+	 when S_CHECK_DIV =>
+            if div_ready = '1' then
+               nextstate <= S_INIT;
+            else
+               nextstate <= S_WAIT_DIV;
+         end if;
 
          if abort = '1' then
             nextstate <= S_INIT;
@@ -157,23 +157,26 @@ state <= S_INIT when rst_n = '0' else nextstate when rising_edge(CLK);
 
 -- control signals
 mem_we                    <= '0';
-mem_en                    <= '1'            when state = S_READ_1 and state = S_READ_2 else '0';		    
-done                      <= '1'            when state = S_INIT;
+mem_en                    <= '1'            when state = S_READ_1 or state = S_READ_2 else '0';		    
+done                      <= '1'            when state = S_INIT else '0';
 load_R_X                  <= '1'            when (state = S_INIT and start = '1') or
                                                  (state = S_FETCH_1 and mem_ready = '1') else '0';
 load_R_Y                  <= '1'            when (state = S_INIT and start = '1') or
                                                  (state = S_FETCH_2 and mem_ready = '1') else '0';
 load_R_D1                 <= '1'            when (state = S_FETCH_1 and mem_ready = '1') else '0'; 
 load_R_D2                 <= '1'            when (state = S_FETCH_2 and mem_ready = '1') else '0';
-load_R_res                <= '1'            when (state = S_ACC_1) or (state = S_ACC_2) or (state = S_DIV) else '0';           
+load_R_res                <= '1'            when (state = S_ACC) else '0';           
 load_CNT                  <= '1'            when (state = S_INIT and start = '1') or
-                                                 (state = S_ACC_2) else '0';
+                                                 (state = S_ACC) else '0';
 load_L                    <= '1'            when (state = S_INIT and start = '1') else '0';
 sel_R_X                   <= '1'            when (state = S_FETCH_1) else '0';
 sel_R_Y                   <= '1'            when (state = S_FETCH_2) else '0';
 sel_CNT                   <= '0'            when (state = S_INIT) else '1';
+sel_R_res                 <= '0'            when (state = S_ACC) else '1';
+set_result                <= '1'            when (state = S_WAIT_DIV and div_ready = '1') else '0';
 set_mem_addr              <= '1'            when (state = S_READ_1) or (state = S_READ_2) else '0';
 sel_mem_addr              <= '0'            when (state = S_READ_1) else '1';
-set_result                <= '1'            when (state = S_DIV) else '0';
+div_start                 <= '1'            when (state = S_START_DIV);
+div_abort                 <= '0';
 
 end behav;
