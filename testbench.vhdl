@@ -15,7 +15,7 @@ entity systemTB is
       CLK_SEMIPERIOD1                                 : time := 5 ns;
       RESET_TIME                                      : time := 50 ns;
       VERBOSE                                         : boolean := false;
-      NTESTS                                          : integer := 100;
+      NTESTS                                          : integer := -1;
       N_BITS                                          : integer := 40;
       W_BITS                                          : integer := 32;
       A_BITS                                          : integer := 12;

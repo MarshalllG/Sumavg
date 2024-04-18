@@ -88,6 +88,6 @@ begin
 
     -- data outputs
     mem_addr            <= R_address            when load_R_address = '1';
-    mem_datain          <= din_addr             when set_mem_datain = '1';
-    dout                <= mem_dataout          when set_mem_dataout = '1';
+    mem_datain          <= din_addr             when set_mem_datain = '1' else (others => '-');
+    dout                <= mem_dataout          when set_mem_dataout = '1' else (others => '-');
 end s;

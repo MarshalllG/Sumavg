@@ -1,0 +1,89 @@
+vsim -c
+
+project new . sumavg
+
+project addfile C:/Users/Giulio/Desktop/code/dispatcher.vhdl
+project addfile C:/Users/Giulio/Desktop/code/dispatcherCU.vhdl
+project addfile C:/Users/Giulio/Desktop/code/dispatcherDP.vhdl
+project addfile C:/Users/Giulio/Desktop/code/memaccess.vhdl
+project addfile C:/Users/Giulio/Desktop/code/memaccessCU.vhdl
+project addfile C:/Users/Giulio/Desktop/code/memaccessDP.vhdl
+project addfile C:/Users/Giulio/Desktop/code/memmux.vhdl
+project addfile C:/Users/Giulio/Desktop/code/memmuxCU.vhdl
+project addfile C:/Users/Giulio/Desktop/code/memmuxDP.vhdl
+project addfile C:/Users/Giulio/Desktop/code/sumavg.vhdl
+project addfile C:/Users/Giulio/Desktop/code/sumavgCU.vhdl
+project addfile C:/Users/Giulio/Desktop/code/sumavgDP.vhdl
+project addfile C:/Users/Giulio/Desktop/code/divider.vhdl
+project addfile C:/Users/Giulio/Desktop/code/dividerCU.vhdl
+project addfile C:/Users/Giulio/Desktop/code/dividerDP.vhdl
+project addfile C:/Users/Giulio/Desktop/code/memory.vhdl
+project addfile C:/Users/Giulio/Desktop/code/tester.vhdl
+project addfile C:/Users/Giulio/Desktop/code/testbench.vhdl
+project addfile C:/Users/Giulio/Desktop/code/system.vhdl
+
+project calculateorder
+
+vcom -work work -2002 -vopt ../code/dispatcher.vhdl
+vcom -work work -2002 -vopt ../code/dispatcherCU.vhdl
+vcom -work work -2002 -vopt ../code/dispatcherDP.vhdl
+vcom -work work -2002 -vopt ../code/memaccess.vhdl
+vcom -work work -2002 -vopt ../code/memaccessCU.vhdl
+vcom -work work -2002 -vopt ../code/memaccessDP.vhdl
+vcom -work work -2002 -vopt ../code/memmux.vhdl
+vcom -work work -2002 -vopt ../code/memmuxCU.vhdl
+vcom -work work -2002 -vopt ../code/memmuxDP.vhdl
+vcom -work work -2002 -vopt ../code/sumavg.vhdl
+vcom -work work -2002 -vopt ../code/sumavgCU.vhdl
+vcom -work work -2002 -vopt ../code/sumavgDP.vhdl
+vcom -work work -2002 -vopt ../code/divider.vhdl
+vcom -work work -2002 -vopt ../code/dividerCU.vhdl
+vcom -work work -2002 -vopt ../code/dividerDP.vhdl
+vcom -work work -2002 -vopt ../code/memory.vhdl
+vcom -work work -2002 -vopt ../code/tester.vhdl
+vcom -work work -2002 -vopt ../code/testbench.vhdl
+vcom -work work -2002 -vopt ../code/system.vhdl
+
+vcom -work work -2002 -vopt +cover ../code/dispatcher.vhdl
+vcom -work work -2002 -vopt +cover ../code/dispatcherCU.vhdl
+vcom -work work -2002 -vopt +cover ../code/dispatcherDP.vhdl
+vcom -work work -2002 -vopt +cover ../code/memaccess.vhdl
+vcom -work work -2002 -vopt +cover ../code/memaccessCU.vhdl
+vcom -work work -2002 -vopt +cover ../code/memaccessDP.vhdl
+vcom -work work -2002 -vopt +cover ../code/memmux.vhdl
+vcom -work work -2002 -vopt +cover ../code/memmuxCU.vhdl
+vcom -work work -2002 -vopt +cover ../code/memmuxDP.vhdl
+vcom -work work -2002 -vopt +cover ../code/sumavg.vhdl
+vcom -work work -2002 -vopt +cover ../code/sumavgCU.vhdl
+vcom -work work -2002 -vopt +cover ../code/sumavgDP.vhdl
+vcom -work work -2002 -vopt +cover ../code/system.vhdl
+
+vsim -suppress 1127 -coverage systemtb
+
+add wave -r sim:/*
+
+vcd files sumavg.all.vcd
+
+vcd add -r -file sumavg.all.vcd /*
+
+vcd files sumavg.vcd
+
+vcd add -r -file sumavg.vcd /SYS/*
+
+set NumericStdNoWarnings 1
+
+run -all
+
+vcd off sumavg.all.vcd
+
+vcd off sumavg.vcd
+
+coverage save sumavg.ucdb
+
+vcover stats sumavg.ucdb
+
+vcover report -toggles -all sumavg.ucdb
+
+vcover report -code bcefst -byfile -details sumavg.ucdb
+exit
+

@@ -62,11 +62,11 @@ architecture behav of tester is
 	constant NODATA		: integer := -1;
 
 	type array_of_integers is array (natural range <>) of integer;
-	constant COMMANDS	: array_of_integers := (CMD_SA, CMD_WR, CMD_WR, CMD_SA, CMD_WR, CMD_WR, CMD_SA, CMD_RD, CMD_GO, CMD_WR);
-	constant DATA		: array_of_integers := (10, 1966080, 983040, 16, 1441792, 2228224, 10, 17, 18, 10);
-	constant ADDR1		: array_of_integers := (NODATA, NODATA, NODATA, NODATA, NODATA, NODATA, NODATA, NODATA, 10, NODATA);
-	constant ADDR2		: array_of_integers := (NODATA, NODATA, NODATA, NODATA, NODATA, NODATA, NODATA, NODATA, 16);
-	constant LEN		: array_of_integers := (NODATA, NODATA, NODATA, NODATA, NODATA, NODATA, NODATA, NODATA, 2, NODATA);
+	constant COMMANDS	: array_of_integers := (CMD_SA, CMD_WR, CMD_WR, CMD_WR, CMD_SA, CMD_WR, CMD_WR, CMD_WR, CMD_GO, CMD_GO, CMD_GO);
+	constant DATA		: array_of_integers := (10, 15204352, 63111168, 117178368, 16, 50331648, 82116608, 2147483247, 17, 18, 10);
+	constant ADDR1		: array_of_integers := (NODATA, NODATA, NODATA, NODATA, NODATA, NODATA, NODATA, NODATA, 10, 11, 10);
+	constant ADDR2		: array_of_integers := (NODATA, NODATA, NODATA, NODATA, NODATA, NODATA, NODATA, NODATA, 16, 16, 16);
+	constant LEN		: array_of_integers := (NODATA, NODATA, NODATA, NODATA, NODATA, NODATA, NODATA, NODATA, 3, 2, 0);
 
 begin
 	abort <= '0';

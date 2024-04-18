@@ -75,16 +75,18 @@ architecture struct of sumavg is
    signal load_R_res                            : std_logic;
    signal load_CNT                              : std_logic;
    signal load_L                                : std_logic;
+   signal load_result                           : std_logic;
    signal sel_R_X                               : std_logic;
    signal sel_R_Y                               : std_logic;
    signal sel_R_res                             : std_logic;
    signal sel_CNT                               : std_logic;
    signal set_mem_addr                          : std_logic;   
    signal sel_mem_addr                          : std_logic;
-   signal set_result                            : std_logic;
    signal div_abort                             : std_logic;
    signal div_start                             : std_logic;
    signal div_ready                             : std_logic;
+   signal division_by_zero                      : std_logic;
+   signal overflow                              : std_logic;
  
 
 begin
@@ -105,14 +107,16 @@ begin
       load_R_res => load_R_res,
       load_CNT => load_CNT,
       load_L => load_L,
+      load_result => load_result,
       sel_R_X => sel_R_X,
       sel_R_Y => sel_R_Y,
       sel_R_res => sel_R_res,
       sel_CNT => sel_CNT,
       set_mem_addr => set_mem_addr, 
       sel_mem_addr => sel_mem_addr, 
-      set_result => set_result,
-      mem_ready => mem_ready,
+      mem_ready => mem_ready, 
+      overflow => overflow,
+      division_by_zero => division_by_zero,
       div_abort => div_abort,
       div_start => div_start,
       div_ready => div_ready,
@@ -141,13 +145,15 @@ begin
       load_R_res => load_R_res,
       load_CNT => load_CNT,
       load_L => load_L,
+      load_result => load_result,
       sel_R_X => sel_R_X,
       sel_R_Y => sel_R_Y,
       sel_R_res => sel_R_res,
       sel_CNT => sel_CNT,
       set_mem_addr => set_mem_addr, 
       sel_mem_addr => sel_mem_addr, 
-      set_result => set_result,
+      overflow => overflow,
+      division_by_zero => division_by_zero,
       div_start => div_start,
       div_ready => div_ready,
       div_abort => div_abort

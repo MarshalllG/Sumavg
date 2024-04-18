@@ -30,14 +30,19 @@ component sumavg_ctrl is
       sel_CNT                                   : out std_logic;
       set_mem_addr                              : out std_logic;  
       sel_mem_addr                              : out std_logic; 
-      set_result                                : out std_logic;
-      mem_ready                                 : in std_logic;
+      load_result                                : out std_logic;
+         -- div
       div_abort                                 : out std_logic;
       div_start                                 : out std_logic;
       div_ready                                 : in std_logic;
       done                                      : out std_logic;
+         -- mem
       mem_en                                    : out std_logic;
-      mem_we                                    : out std_logic
+      mem_we                                    : out std_logic;
+      mem_ready                                 : in std_logic;
+         -- status
+      division_by_zero                          : in std_logic;
+      overflow                                  : in std_logic
    );
 end component;
 end sumavg_ctrl_pkg;
@@ -74,21 +79,26 @@ entity sumavg_ctrl is
       sel_R_Y                                   : out std_logic;
       sel_R_res                                 : out std_logic;
       sel_CNT                                   : out std_logic;
-      set_mem_addr                              : out std_logic;   
-      sel_mem_addr                              : out std_logic;
-      set_result                                : out std_logic;
-      mem_ready                                 : in std_logic;
+      set_mem_addr                              : out std_logic;  
+      sel_mem_addr                              : out std_logic; 
+      load_result                                : out std_logic;
+         -- div
       div_abort                                 : out std_logic;
       div_start                                 : out std_logic;
       div_ready                                 : in std_logic;
       done                                      : out std_logic;
+         -- mem
       mem_en                                    : out std_logic;
-      mem_we                                    : out std_logic
+      mem_we                                    : out std_logic;
+      mem_ready                                 : in std_logic;
+         -- status
+      division_by_zero                          : in std_logic;
+      overflow                                  : in std_logic
    );
 end sumavg_ctrl;
 
 architecture behav of sumavg_ctrl is
-	type statetype is (S_INIT, S_READ_1, S_FETCH_1, S_READ_2, S_FETCH_2, S_ACC, S_START_DIV, S_WAIT_DIV, S_CHECK_DIV);
+	type statetype is (S_INIT, S_READ_1, S_FETCH_1, S_READ_2, S_FETCH_2, S_ACC, S_OVERFLOW, S_START_DIV, S_ERR_ZERO, S_WAIT_DIV, S_CHECK_DIV);
 	signal state, nextstate : statetype;
 
 
@@ -129,12 +139,24 @@ begin
          when S_ACC =>
             if count_eq_L = '1' then
                nextstate <= S_START_DIV;
+            elsif overflow = '1' then
+               nextstate <= S_OVERFLOW;
             else
                nextstate <= S_READ_1;
             end if;
 
+         when S_OVERFLOW =>
+            nextstate <= S_INIT;
+
          when S_START_DIV =>
-            nextstate <= S_WAIT_DIV;
+            if division_by_zero = '1' then
+               nextstate <= S_ERR_ZERO;
+            else
+               nextstate <= S_WAIT_DIV;
+            end if;
+
+         when S_ERR_ZERO =>
+            nextstate <= S_INIT;
 
          when S_WAIT_DIV =>
             nextstate <= S_CHECK_DIV;
@@ -173,10 +195,11 @@ sel_R_X                   <= '1'            when (state = S_FETCH_1) else '0';
 sel_R_Y                   <= '1'            when (state = S_FETCH_2) else '0';
 sel_CNT                   <= '0'            when (state = S_INIT) else '1';
 sel_R_res                 <= '0'            when (state = S_ACC) else '1';
-set_result                <= '1'            when (state = S_WAIT_DIV and div_ready = '1') else '0';
+load_result               <= '1'            when (state = S_WAIT_DIV and div_ready = '1') or (state = S_OVERFLOW) else '0';
 set_mem_addr              <= '1'            when (state = S_READ_1) or (state = S_READ_2) else '0';
 sel_mem_addr              <= '0'            when (state = S_READ_1) else '1';
-div_start                 <= '1'            when (state = S_START_DIV);
+div_start                 <= '1'            when (state = S_START_DIV) else '-';
 div_abort                 <= '0';
+
 
 end behav;

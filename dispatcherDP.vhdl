@@ -94,9 +94,7 @@ begin
     end process regs;
 
     -- MUX for R_dataout
-    with sel_R_dataout select
-        R_dataout_in <= "00000000" & ma_dout when '0' ,
-                        "00000000" & dev_result when others;
+    R_dataout_in <= "00000000" & ma_dout when sel_R_dataout = '0' else "00000000" & dev_result;
 
     -- status signals
     input_hi <= input(N_BITS-1 DOWNTO W_BITS);
