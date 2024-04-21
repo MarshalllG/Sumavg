@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\giulio\Desktop\sumavg\sumavg\dispatcher.ncd
+OUTFILE=C:\Users\giulio\Desktop\sumavg\sumavg\dispatcher.bit
+FAMILY=Spartan6
+PART=xc6slx45-3csg324
+WORKINGDIR=C:\Users\giulio\Desktop\sumavg\sumavg
+LICENSE=ISE
+USER_INFO=212695822_0_0_266

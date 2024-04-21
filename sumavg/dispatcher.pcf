@@ -1,0 +1,66 @@
+//! **************************************************************************
+// Written by: Map M.53d on Fri Apr 19 18:27:37 2024
+//! **************************************************************************
+
+SCHEMATIC START;
+TIMEGRP CLK = BEL "DP/R_dataout_31" BEL "DP/R_dataout_30" BEL
+        "DP/R_dataout_29" BEL "DP/R_dataout_28" BEL "DP/R_dataout_27" BEL
+        "DP/R_dataout_26" BEL "DP/R_dataout_25" BEL "DP/R_dataout_24" BEL
+        "DP/R_dataout_23" BEL "DP/R_dataout_22" BEL "DP/R_dataout_21" BEL
+        "DP/R_dataout_20" BEL "DP/R_dataout_19" BEL "DP/R_dataout_18" BEL
+        "DP/R_dataout_17" BEL "DP/R_dataout_16" BEL "DP/R_dataout_15" BEL
+        "DP/R_dataout_14" BEL "DP/R_dataout_13" BEL "DP/R_dataout_12" BEL
+        "DP/R_dataout_11" BEL "DP/R_dataout_10" BEL "DP/R_dataout_9" BEL
+        "DP/R_dataout_8" BEL "DP/R_dataout_7" BEL "DP/R_dataout_6" BEL
+        "DP/R_dataout_5" BEL "DP/R_dataout_4" BEL "DP/R_dataout_3" BEL
+        "DP/R_dataout_2" BEL "DP/R_dataout_1" BEL "DP/R_dataout_0" BEL
+        "CTRL/nextstate[1]_dff_8_FSM_FFd1" BEL
+        "CTRL/nextstate[1]_dff_8_FSM_FFd2" BEL
+        "CTRL/nextstate[1]_dff_8_FSM_FFd1_1" BEL "CLK_BUFGP/BUFG";
+TIMEGRP inputs = BEL "input<39>" BEL "input<38>" BEL "input<37>" BEL
+        "input<36>" BEL "input<35>" BEL "input<34>" BEL "input<33>" BEL
+        "input<32>" BEL "input<31>" BEL "input<30>" BEL "input<29>" BEL
+        "input<28>" BEL "input<27>" BEL "input<26>" BEL "input<25>" BEL
+        "input<24>" BEL "input<23>" BEL "input<22>" BEL "input<21>" BEL
+        "input<20>" BEL "input<19>" BEL "input<18>" BEL "input<17>" BEL
+        "input<16>" BEL "input<15>" BEL "input<14>" BEL "input<13>" BEL
+        "input<12>" BEL "input<11>" BEL "input<10>" BEL "input<9>" BEL
+        "input<8>" BEL "input<7>" BEL "input<6>" BEL "input<5>" BEL "input<4>"
+        BEL "input<3>" BEL "input<2>" BEL "input<1>" BEL "input<0>" BEL
+        "ma_dout<31>" BEL "ma_dout<30>" BEL "ma_dout<29>" BEL "ma_dout<28>"
+        BEL "ma_dout<27>" BEL "ma_dout<26>" BEL "ma_dout<25>" BEL
+        "ma_dout<24>" BEL "ma_dout<23>" BEL "ma_dout<22>" BEL "ma_dout<21>"
+        BEL "ma_dout<20>" BEL "ma_dout<19>" BEL "ma_dout<18>" BEL
+        "ma_dout<17>" BEL "ma_dout<16>" BEL "ma_dout<15>" BEL "ma_dout<14>"
+        BEL "ma_dout<13>" BEL "ma_dout<12>" BEL "ma_dout<11>" BEL
+        "ma_dout<10>" BEL "ma_dout<9>" BEL "ma_dout<8>" BEL "ma_dout<7>" BEL
+        "ma_dout<6>" BEL "ma_dout<5>" BEL "ma_dout<4>" BEL "ma_dout<3>" BEL
+        "ma_dout<2>" BEL "ma_dout<1>" BEL "ma_dout<0>" BEL "dev_result<31>"
+        BEL "dev_result<30>" BEL "dev_result<29>" BEL "dev_result<28>" BEL
+        "dev_result<27>" BEL "dev_result<26>" BEL "dev_result<25>" BEL
+        "dev_result<24>" BEL "dev_result<23>" BEL "dev_result<22>" BEL
+        "dev_result<21>" BEL "dev_result<20>" BEL "dev_result<19>" BEL
+        "dev_result<18>" BEL "dev_result<17>" BEL "dev_result<16>" BEL
+        "dev_result<15>" BEL "dev_result<14>" BEL "dev_result<13>" BEL
+        "dev_result<12>" BEL "dev_result<11>" BEL "dev_result<10>" BEL
+        "dev_result<9>" BEL "dev_result<8>" BEL "dev_result<7>" BEL
+        "dev_result<6>" BEL "dev_result<5>" BEL "dev_result<4>" BEL
+        "dev_result<3>" BEL "dev_result<2>" BEL "dev_result<1>" BEL
+        "dev_result<0>" BEL "start" BEL "ma_done" BEL "dev_done";
+TIMEGRP outputs = BEL "output<39>" BEL "output<38>" BEL "output<37>" BEL
+        "output<36>" BEL "output<35>" BEL "output<34>" BEL "output<33>" BEL
+        "output<32>" BEL "output<31>" BEL "output<30>" BEL "output<29>" BEL
+        "output<28>" BEL "output<27>" BEL "output<26>" BEL "output<25>" BEL
+        "output<24>" BEL "output<23>" BEL "output<22>" BEL "output<21>" BEL
+        "output<20>" BEL "output<19>" BEL "output<18>" BEL "output<17>" BEL
+        "output<16>" BEL "output<15>" BEL "output<14>" BEL "output<13>" BEL
+        "output<12>" BEL "output<11>" BEL "output<10>" BEL "output<9>" BEL
+        "output<8>" BEL "output<7>" BEL "output<6>" BEL "output<5>" BEL
+        "output<4>" BEL "output<3>" BEL "output<2>" BEL "output<1>" BEL
+        "output<0>";
+TS_CLK = PERIOD TIMEGRP "CLK" 10 ns HIGH 50%;
+OFFSET = IN 10 ns VALID 10 ns BEFORE COMP "CLK" "RISING";
+TIMEGRP "inputs" OFFSET = IN 10 ns VALID 10 ns BEFORE COMP "CLK" "RISING";
+TIMEGRP "outputs" OFFSET = OUT 10 ns AFTER COMP "CLK";
+SCHEMATIC END;
+

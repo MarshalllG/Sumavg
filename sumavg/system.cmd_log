@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "C:/Users/giulio/Desktop/sumavg/sumavg/system.xst" -ofn "C:/Users/giulio/Desktop/sumavg/sumavg/system.syr" 
+xst -intstyle ise -ifn "C:/Users/giulio/Desktop/sumavg/sumavg/system.xst" -ofn "C:/Users/giulio/Desktop/sumavg/sumavg/system.syr" 
+xst -intstyle ise -ifn "C:/Users/giulio/Desktop/sumavg/sumavg/system.xst" -ofn "C:/Users/giulio/Desktop/sumavg/sumavg/system.syr" 
+xst -intstyle ise -ifn "C:/Users/giulio/Desktop/sumavg/sumavg/system.xst" -ofn "C:/Users/giulio/Desktop/sumavg/sumavg/system.syr" 
+xst -intstyle ise -ifn "C:/Users/giulio/Desktop/sumavg/sumavg/system.xst" -ofn "C:/Users/giulio/Desktop/sumavg/sumavg/system.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx45-fgg484-3 system.ngc system.ngd  
+xst -intstyle ise -ifn "C:/Users/giulio/Desktop/sumavg/sumavg/system.xst" -ofn "C:/Users/giulio/Desktop/sumavg/sumavg/system.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx45-csg324-3 system.ngc system.ngd  

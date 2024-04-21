@@ -1,0 +1,21 @@
+xst -intstyle ise -ifn "C:/Users/giulio/Desktop/sumavg/sumavg/dispatcher.xst" -ofn "C:/Users/giulio/Desktop/sumavg/sumavg/dispatcher.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx45-csg324-3 dispatcher.ngc dispatcher.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc dispatcher.ucf -p xc6slx45-csg324-3 dispatcher.ngc dispatcher.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -ol high -t 1 -xt 0 -register_duplication off -global_opt off -ir off -pr off -lc off -power off -o dispatcher_map.ncd dispatcher.ngd dispatcher.pcf 
+map -intstyle ise -p xc6slx45-csg324-3 -w -ol high -t 1 -xt 0 -register_duplication off -global_opt off -ir off -pr off -lc off -power off -o dispatcher_map.ncd dispatcher.ngd dispatcher.pcf 
+map -intstyle ise -p xc6slx45-csg324-3 -w -ol high -t 1 -xt 0 -register_duplication off -global_opt off -ir off -pr off -lc off -power off -o dispatcher_map.ncd dispatcher.ngd dispatcher.pcf 
+map -intstyle ise -p xc6slx45-csg324-3 -w -ol high -t 1 -xt 0 -register_duplication off -global_opt off -ir off -pr off -lc off -power off -o dispatcher_map.ncd dispatcher.ngd dispatcher.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc dispatcher.ucf -p xc6slx45-csg324-3 dispatcher.ngc dispatcher.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -ol high -t 1 -xt 0 -register_duplication off -global_opt off -ir off -pr off -lc off -power off -o dispatcher_map.ncd dispatcher.ngd dispatcher.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc dispatcher.ucf -p xc6slx45-csg324-3 dispatcher.ngc dispatcher.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -ol high -t 1 -xt 0 -register_duplication off -global_opt off -ir off -pr off -lc off -power off -o dispatcher_map.ncd dispatcher.ngd dispatcher.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc dispatcher.ucf -p xc6slx45-csg324-3 dispatcher.ngc dispatcher.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -ol high -t 1 -xt 0 -register_duplication off -global_opt off -ir off -pr off -lc off -power off -o dispatcher_map.ncd dispatcher.ngd dispatcher.pcf 
+map -intstyle ise -p xc6slx45-csg324-3 -w -ol high -t 1 -xt 0 -register_duplication off -global_opt off -ir off -pr off -lc off -power off -o dispatcher_map.ncd dispatcher.ngd dispatcher.pcf 
+xst -intstyle ise -ifn "C:/Users/giulio/Desktop/sumavg/sumavg/dispatcher.xst" -ofn "C:/Users/giulio/Desktop/sumavg/sumavg/dispatcher.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc dispatcher.ucf -p xc6slx45-csg324-3 dispatcher.ngc dispatcher.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -ol high -t 1 -xt 0 -register_duplication off -global_opt off -ir off -pr off -lc off -power off -o dispatcher_map.ncd dispatcher.ngd dispatcher.pcf 
+map -intstyle ise -p xc6slx45-csg324-3 -w -ol high -t 1 -xt 0 -register_duplication off -global_opt off -ir off -pr off -lc off -power off -o dispatcher_map.ncd dispatcher.ngd dispatcher.pcf 
+par -w -intstyle ise -ol high dispatcher_map.ncd dispatcher.ncd dispatcher.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dispatcher.twx dispatcher.ncd -o dispatcher.twr dispatcher.pcf -ucf dispatcher.ucf 
+bitgen -intstyle ise -f dispatcher.ut dispatcher.ncd 

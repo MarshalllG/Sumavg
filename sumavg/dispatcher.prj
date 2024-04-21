@@ -1,0 +1,3 @@
+vhdl work "../code/dispatcherDP.vhdl"
+vhdl work "../code/dispatcherCU.vhdl"
+vhdl work "../code/dispatcher.vhdl"
