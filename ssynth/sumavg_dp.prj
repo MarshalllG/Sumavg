@@ -1,0 +1,4 @@
+vhdl work "../code/dividerDP.vhdl"
+vhdl work "../code/dividerCU.vhdl"
+vhdl work "../code/divider.vhdl"
+vhdl work "../code/sumavgDP.vhdl"

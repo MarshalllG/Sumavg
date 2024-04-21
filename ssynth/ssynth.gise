@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="ssynth.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="netgen"/>
+    <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/par/sumavg_dp_timesim.nlf"/>
+    <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_SDF" xil_pn:name="netgen/par/sumavg_dp_timesim.sdf"/>
+    <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_VHDL" xil_pn:name="netgen/par/sumavg_dp_timesim.vhd"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_1"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="sumavg_dp.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="sumavg_dp.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="sumavg_dp.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="sumavg_dp.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="sumavg_dp.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="sumavg_dp.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="sumavg_dp.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="sumavg_dp.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="sumavg_dp.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="sumavg_dp.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="sumavg_dp.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="sumavg_dp.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="sumavg_dp.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="sumavg_dp.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="sumavg_dp.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="sumavg_dp.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="sumavg_dp.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="sumavg_dp.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="sumavg_dp.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="sumavg_dp.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="sumavg_dp.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="sumavg_dp.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="sumavg_dp.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="sumavg_dp_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="sumavg_dp_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="sumavg_dp_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="sumavg_dp_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="sumavg_dp_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="sumavg_dp_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="sumavg_dp_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="sumavg_dp_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="sumavg_dp_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="sumavg_dp_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="sumavg_dp_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="sumavg_dp_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="sumavg_dp_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="sumavg_dp_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="sumavg_dp_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1713691176" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1713691176">
+      <status xil_pn:value="SuccessfullyRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1713691176" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="3737747435591571101" xil_pn:start_ts="1713691176">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1713691176" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-4468985152710231954" xil_pn:start_ts="1713691176">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1713691176" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1713691176">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1713691176" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-921470516457442785" xil_pn:start_ts="1713691176">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1713691176" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="8977612015756273942" xil_pn:start_ts="1713691176">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1713691176" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-6984425065599175432" xil_pn:start_ts="1713691176">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1713691210" xil_pn:in_ck="6980958930356543510" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="226682880322380039" xil_pn:start_ts="1713691206">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="sumavg_dp.cmd_log"/>
+      <outfile xil_pn:name="sumavg_dp.lso"/>
+      <outfile xil_pn:name="sumavg_dp.ngc"/>
+      <outfile xil_pn:name="sumavg_dp.ngr"/>
+      <outfile xil_pn:name="sumavg_dp.prj"/>
+      <outfile xil_pn:name="sumavg_dp.stx"/>
+      <outfile xil_pn:name="sumavg_dp.syr"/>
+      <outfile xil_pn:name="sumavg_dp.xst"/>
+      <outfile xil_pn:name="sumavg_dp_envsettings.html"/>
+      <outfile xil_pn:name="sumavg_dp_summary.html"/>
+      <outfile xil_pn:name="sumavg_dp_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1713691635" xil_pn:in_ck="-5021849633070762830" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="8289876187060858228" xil_pn:start_ts="1713691635">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1713691637" xil_pn:in_ck="-337076720952804450" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-8217881700339732487" xil_pn:start_ts="1713691635">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="sumavg_dp.bld"/>
+      <outfile xil_pn:name="sumavg_dp.cmd_log"/>
+      <outfile xil_pn:name="sumavg_dp.ngd"/>
+      <outfile xil_pn:name="sumavg_dp_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="xlnx_auto_0_xdb"/>
+    </transform>
+    <transform xil_pn:end_ts="1713691656" xil_pn:in_ck="-636954948632955585" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="-5168110666715937566" xil_pn:start_ts="1713691644">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="sumavg_dp.pcf"/>
+      <outfile xil_pn:name="sumavg_dp_map.map"/>
+      <outfile xil_pn:name="sumavg_dp_map.mrp"/>
+      <outfile xil_pn:name="sumavg_dp_map.ncd"/>
+      <outfile xil_pn:name="sumavg_dp_map.ngm"/>
+      <outfile xil_pn:name="sumavg_dp_map.xrpt"/>
+      <outfile xil_pn:name="sumavg_dp_summary.xml"/>
+      <outfile xil_pn:name="sumavg_dp_usage.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1713691680" xil_pn:in_ck="5869262000241460216" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-724113048552167560" xil_pn:start_ts="1713691668">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="sumavg_dp.ncd"/>
+      <outfile xil_pn:name="sumavg_dp.pad"/>
+      <outfile xil_pn:name="sumavg_dp.par"/>
+      <outfile xil_pn:name="sumavg_dp.ptwx"/>
+      <outfile xil_pn:name="sumavg_dp.unroutes"/>
+      <outfile xil_pn:name="sumavg_dp.xpi"/>
+      <outfile xil_pn:name="sumavg_dp_pad.csv"/>
+      <outfile xil_pn:name="sumavg_dp_pad.txt"/>
+      <outfile xil_pn:name="sumavg_dp_par.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1713691761" xil_pn:in_ck="-5021849633070770455" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="335873702051717080" xil_pn:start_ts="1713691749">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="sumavg_dp.bgn"/>
+      <outfile xil_pn:name="sumavg_dp.bit"/>
+      <outfile xil_pn:name="sumavg_dp.drc"/>
+      <outfile xil_pn:name="sumavg_dp.ut"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1713691714" xil_pn:in_ck="-5021849633070770455" xil_pn:name="TRAN_postParSimModel" xil_pn:prop_ck="-3204686039048488531" xil_pn:start_ts="1713691708">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="netgen"/>
+      <outfile xil_pn:name="netgen/par/sumavg_dp_timesim.nlf"/>
+      <outfile xil_pn:name="netgen/par/sumavg_dp_timesim.sdf"/>
+      <outfile xil_pn:name="netgen/par/sumavg_dp_timesim.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1713691680" xil_pn:in_ck="2053482957727891003" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1713691676">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="sumavg_dp.twr"/>
+      <outfile xil_pn:name="sumavg_dp.twx"/>
+    </transform>
+    <transform xil_pn:end_ts="1713691426" xil_pn:in_ck="-5021849633070770323" xil_pn:name="TRAN_createTimingConstraints" xil_pn:start_ts="1713691424">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+    </transform>
+  </transforms>
+
+</generated_project>

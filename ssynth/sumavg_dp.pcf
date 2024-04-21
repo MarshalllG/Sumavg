@@ -1,0 +1,81 @@
+//! **************************************************************************
+// Written by: Map M.53d on Sun Apr 21 11:27:34 2024
+//! **************************************************************************
+
+SCHEMATIC START;
+TIMEGRP CLK = BEL "L_0" BEL "L_1" BEL "L_2" BEL "L_3" BEL "L_4" BEL "L_5" BEL
+        "L_6" BEL "L_7" BEL "R_D1_0" BEL "R_D1_1" BEL "R_D1_2" BEL "R_D1_3"
+        BEL "R_D1_4" BEL "R_D1_5" BEL "R_D1_6" BEL "R_D1_7" BEL "R_D1_8" BEL
+        "R_D1_9" BEL "R_D1_10" BEL "R_D1_11" BEL "R_D1_12" BEL "R_D1_13" BEL
+        "R_D1_14" BEL "R_D1_15" BEL "R_D1_16" BEL "R_D1_17" BEL "R_D1_18" BEL
+        "R_D1_19" BEL "R_D1_20" BEL "R_D1_21" BEL "R_D1_22" BEL "R_D1_23" BEL
+        "R_D1_24" BEL "R_D1_25" BEL "R_D1_26" BEL "R_D1_27" BEL "R_D1_28" BEL
+        "R_D1_29" BEL "R_D1_30" BEL "R_D1_31" BEL "R_D2_0" BEL "R_D2_1" BEL
+        "R_D2_2" BEL "R_D2_3" BEL "R_D2_4" BEL "R_D2_5" BEL "R_D2_6" BEL
+        "R_D2_7" BEL "R_D2_8" BEL "R_D2_9" BEL "R_D2_10" BEL "R_D2_11" BEL
+        "R_D2_12" BEL "R_D2_13" BEL "R_D2_14" BEL "R_D2_15" BEL "R_D2_16" BEL
+        "R_D2_17" BEL "R_D2_18" BEL "R_D2_19" BEL "R_D2_20" BEL "R_D2_21" BEL
+        "R_D2_22" BEL "R_D2_23" BEL "R_D2_24" BEL "R_D2_25" BEL "R_D2_26" BEL
+        "R_D2_27" BEL "R_D2_28" BEL "R_D2_29" BEL "R_D2_30" BEL "R_D2_31" BEL
+        "R_res_0" BEL "R_res_1" BEL "R_res_2" BEL "R_res_3" BEL "R_res_4" BEL
+        "R_res_5" BEL "R_res_6" BEL "R_res_7" BEL "R_res_8" BEL "R_res_9" BEL
+        "R_res_10" BEL "R_res_11" BEL "R_res_12" BEL "R_res_13" BEL "R_res_14"
+        BEL "R_res_15" BEL "R_res_16" BEL "R_res_17" BEL "R_res_18" BEL
+        "R_res_19" BEL "R_res_20" BEL "R_res_21" BEL "R_res_22" BEL "R_res_23"
+        BEL "R_res_24" BEL "R_res_25" BEL "R_res_26" BEL "R_res_27" BEL
+        "R_res_28" BEL "R_res_29" BEL "R_res_30" BEL "R_res_31" BEL "R_X_0"
+        BEL "R_X_1" BEL "R_X_2" BEL "R_X_3" BEL "R_X_4" BEL "R_X_5" BEL
+        "R_X_6" BEL "R_X_7" BEL "R_X_8" BEL "R_X_9" BEL "R_X_10" BEL "R_X_11"
+        BEL "R_Y_0" BEL "R_Y_1" BEL "R_Y_2" BEL "R_Y_3" BEL "R_Y_4" BEL
+        "R_Y_5" BEL "R_Y_6" BEL "R_Y_7" BEL "R_Y_8" BEL "R_Y_9" BEL "R_Y_10"
+        BEL "R_Y_11" BEL "CNT_0" BEL "CNT_1" BEL "CNT_2" BEL "CNT_3" BEL
+        "CNT_4" BEL "CNT_5" BEL "CNT_6" BEL "CNT_7" BEL "DIV/DP/R_cnt_5" BEL
+        "DIV/DP/R_cnt_4" BEL "DIV/DP/R_cnt_3" BEL "DIV/DP/R_cnt_2" BEL
+        "DIV/DP/R_cnt_1" BEL "DIV/DP/R_cnt_0" BEL "DIV/DP/R_A_62" BEL
+        "DIV/DP/R_A_61" BEL "DIV/DP/R_A_60" BEL "DIV/DP/R_A_59" BEL
+        "DIV/DP/R_A_58" BEL "DIV/DP/R_A_57" BEL "DIV/DP/R_A_56" BEL
+        "DIV/DP/R_A_55" BEL "DIV/DP/R_A_54" BEL "DIV/DP/R_A_53" BEL
+        "DIV/DP/R_A_52" BEL "DIV/DP/R_A_51" BEL "DIV/DP/R_A_50" BEL
+        "DIV/DP/R_A_49" BEL "DIV/DP/R_A_48" BEL "DIV/DP/R_A_47" BEL
+        "DIV/DP/R_A_46" BEL "DIV/DP/R_A_45" BEL "DIV/DP/R_A_44" BEL
+        "DIV/DP/R_A_43" BEL "DIV/DP/R_A_42" BEL "DIV/DP/R_A_41" BEL
+        "DIV/DP/R_A_40" BEL "DIV/DP/R_A_39" BEL "DIV/DP/R_A_38" BEL
+        "DIV/DP/R_A_37" BEL "DIV/DP/R_A_36" BEL "DIV/DP/R_A_35" BEL
+        "DIV/DP/R_A_34" BEL "DIV/DP/R_A_33" BEL "DIV/DP/R_A_32" BEL
+        "DIV/DP/R_A_31" BEL "DIV/DP/R_A_30" BEL "DIV/DP/R_A_29" BEL
+        "DIV/DP/R_A_28" BEL "DIV/DP/R_A_27" BEL "DIV/DP/R_A_26" BEL
+        "DIV/DP/R_A_25" BEL "DIV/DP/R_A_24" BEL "DIV/DP/R_A_23" BEL
+        "DIV/DP/R_A_22" BEL "DIV/DP/R_A_21" BEL "DIV/DP/R_A_20" BEL
+        "DIV/DP/R_A_19" BEL "DIV/DP/R_A_18" BEL "DIV/DP/R_A_17" BEL
+        "DIV/DP/R_A_16" BEL "DIV/DP/R_A_15" BEL "DIV/DP/R_A_14" BEL
+        "DIV/DP/R_A_13" BEL "DIV/DP/R_A_12" BEL "DIV/DP/R_A_11" BEL
+        "DIV/DP/R_A_10" BEL "DIV/DP/R_A_9" BEL "DIV/DP/R_A_8" BEL
+        "DIV/DP/R_A_7" BEL "DIV/DP/R_A_6" BEL "DIV/DP/R_A_5" BEL
+        "DIV/DP/R_A_4" BEL "DIV/DP/R_A_3" BEL "DIV/DP/R_A_2" BEL
+        "DIV/DP/R_A_1" BEL "DIV/DP/R_A_0" BEL "DIV/DP/R_res_31" BEL
+        "DIV/DP/R_res_30" BEL "DIV/DP/R_res_29" BEL "DIV/DP/R_res_28" BEL
+        "DIV/DP/R_res_27" BEL "DIV/DP/R_res_26" BEL "DIV/DP/R_res_25" BEL
+        "DIV/DP/R_res_24" BEL "DIV/DP/R_res_23" BEL "DIV/DP/R_res_22" BEL
+        "DIV/DP/R_res_21" BEL "DIV/DP/R_res_20" BEL "DIV/DP/R_res_19" BEL
+        "DIV/DP/R_res_18" BEL "DIV/DP/R_res_17" BEL "DIV/DP/R_res_16" BEL
+        "DIV/DP/R_res_15" BEL "DIV/DP/R_res_14" BEL "DIV/DP/R_res_13" BEL
+        "DIV/DP/R_res_12" BEL "DIV/DP/R_res_11" BEL "DIV/DP/R_res_10" BEL
+        "DIV/DP/R_res_9" BEL "DIV/DP/R_res_8" BEL "DIV/DP/R_res_7" BEL
+        "DIV/DP/R_res_6" BEL "DIV/DP/R_res_5" BEL "DIV/DP/R_res_4" BEL
+        "DIV/DP/R_res_3" BEL "DIV/DP/R_res_2" BEL "DIV/DP/R_res_1" BEL
+        "DIV/DP/R_res_0" BEL "DIV/DP/R_B_7" BEL "DIV/DP/R_B_6" BEL
+        "DIV/DP/R_B_5" BEL "DIV/DP/R_B_4" BEL "DIV/DP/R_B_3" BEL
+        "DIV/DP/R_B_2" BEL "DIV/DP/R_B_1" BEL "DIV/DP/R_B_0" BEL
+        "DIV/CTRL/state_FSM_FFd2" BEL "DIV/CTRL/state_FSM_FFd1" BEL "result_0"
+        BEL "result_1" BEL "result_2" BEL "result_3" BEL "result_4" BEL
+        "result_5" BEL "result_6" BEL "result_7" BEL "result_8" BEL "result_9"
+        BEL "result_10" BEL "result_11" BEL "result_12" BEL "result_13" BEL
+        "result_14" BEL "result_15" BEL "result_16" BEL "result_17" BEL
+        "result_18" BEL "result_19" BEL "result_20" BEL "result_21" BEL
+        "result_22" BEL "result_23" BEL "result_24" BEL "result_25" BEL
+        "result_26" BEL "result_27" BEL "result_28" BEL "result_29" BEL
+        "result_30" BEL "result_31" BEL "CLK_BUFGP/BUFG";
+TS_CLK = PERIOD TIMEGRP "CLK" 10 ns HIGH 50%;
+OFFSET = IN 10 ns VALID 10 ns BEFORE COMP "CLK" "RISING";
+SCHEMATIC END;
+

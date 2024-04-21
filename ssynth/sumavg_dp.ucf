@@ -1,0 +1,5 @@
+
+#Created by Constraints Editor (xc6slx45-csg324-3) - 2024/04/21
+NET "CLK" TNM_NET = CLK;
+TIMESPEC TS_CLK = PERIOD "CLK" 10 ns HIGH 50%;
+OFFSET = IN 10 ns VALID 10 ns BEFORE "CLK" RISING;

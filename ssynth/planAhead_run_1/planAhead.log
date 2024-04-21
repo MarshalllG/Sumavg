@@ -1,0 +1,259 @@
+INFO: [HD-Application 1] Opened log file C:/Users/giulio/Desktop/sumavg/ssynth/planAhead_run_1/planAhead.log
+INFO: [HD-Application 2] Opened journal file C:/Users/giulio/Desktop/sumavg/ssynth/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+# PlanAhead v12.1
+# Build 61553 by hdbuild on Fri Apr 23 10:13:54 PDT 2010
+# Start of session at: 4/21/24 11:30:05 AM
+# Process ID: 1404
+#-----------------------------------------------------------
+INFO: [HD-Licensing 4] Feature available: PartialReconfiguration
+source C:/Users/giulio/Desktop/sumavg/ssynth/pa.fromHdl.tcl
+# create_project -name ssynth -dir "C:/Users/giulio/Desktop/sumavg/ssynth/planAhead_run_1" -part xc6slx45csg324-3
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property top sumavg_dp $srcset
+# set_param project.paUcfFile  "sumavg_dp.ucf"
+# set hdlfile [add_files [list {../code/dividerDP.vhdl}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../code/dividerCU.vhdl}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../code/divider.vhdl}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../code/sumavgDP.vhdl}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# add_files "sumavg_dp.ucf" -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx45csg324-3
+INFO: [HD-RTLIN 2] Parsing VHDL file "C:\Xilinx\12.1\ISE_DS\PlanAhead\parts\xilinx\rtl\lib\synplify\synattr.vhd" into library synplify
+INFO: [HD-RTLIN 2] Parsing package <attributes>.
+INFO: [HD-RTLIN 2] Parsing VHDL file "C:\Xilinx\12.1\ISE_DS\PlanAhead\parts\xilinx\rtl\lib\synplify\synattr.vhd" into library synplify
+INFO: [HD-RTLIN 2] Parsing package <attributes>.
+INFO: [HD-RTLIN 2] Parsing VHDL file "C:\Users\giulio\Desktop\sumavg\code\dividerDP.vhdl" into library work
+INFO: [HD-RTLIN 2] Parsing package <divider_dp_pkg>.
+INFO: [HD-RTLIN 2] Parsing entity <divider_dp>.
+INFO: [HD-RTLIN 2] Parsing architecture <s> of entity <divider_dp>.
+INFO: [HD-RTLIN 2] Parsing VHDL file "C:\Users\giulio\Desktop\sumavg\code\dividerCU.vhdl" into library work
+INFO: [HD-RTLIN 2] Parsing package <divider_ctrl_pkg>.
+INFO: [HD-RTLIN 2] Parsing entity <divider_ctrl>.
+INFO: [HD-RTLIN 2] Parsing architecture <s> of entity <divider_ctrl>.
+INFO: [HD-RTLIN 2] Parsing VHDL file "C:\Users\giulio\Desktop\sumavg\code\divider.vhdl" into library work
+INFO: [HD-RTLIN 2] Parsing package <divider_pkg>.
+INFO: [HD-RTLIN 2] Parsing entity <divider>.
+INFO: [HD-RTLIN 2] Parsing architecture <s> of entity <divider>.
+INFO: [HD-RTLIN 2] Parsing VHDL file "C:\Users\giulio\Desktop\sumavg\code\sumavgDP.vhdl" into library work
+INFO: [HD-RTLIN 2] Parsing package <sumavg_dp_pkg>.
+INFO: [HD-RTLIN 2] Parsing entity <sumavg_dp>.
+INFO: [HD-RTLIN 2] Parsing architecture <s> of entity <sumavg_dp>.
+WARN: [HD-RTLIN 1] N:/M.48/rtf/vhdl/xst/src/numeric_std.vhd(878) Range is empty (null range)
+WARN: [HD-RTLIN 1] N:/M.48/rtf/vhdl/xst/src/numeric_std.vhd(879) Range is empty (null range)
+INFO: [HD-RTLIN 2] Elaborating entity <sumavg_dp> (architecture <s>) with generics from library <work>.
+INFO: [HD-RTLIN 2] Elaborating entity <divider> (architecture <s>) with generics from library <work>.
+INFO: [HD-RTLIN 2] Elaborating entity <divider_ctrl> (architecture <s>) from library <work>.
+INFO: [HD-RTLIN 2] Elaborating entity <divider_dp> (architecture <s>) with generics from library <work>.
+INFO: [HD-ArchReader 7] Loading clock regions from C:/Xilinx/12.1/ISE_DS/PlanAhead/parts/xilinx/spartan6/spartan6lx/xc6slx45/ClockRegion.xml
+INFO: [HD-ArchReader 8] Loading clock buffers from C:/Xilinx/12.1/ISE_DS/PlanAhead/parts/xilinx/spartan6/spartan6lx/xc6slx45/ClockBuffers.xml
+INFO: [HD-ArchReader 3] Loading package from C:/Xilinx/12.1/ISE_DS/PlanAhead/parts/xilinx/spartan6/spartan6lx/xc6slx45/csg324/Package.xml
+INFO: [HD-ArchReader 13] Loading package pin functions from C:/Xilinx/12.1/ISE_DS/PlanAhead/parts/xilinx/spartan6/PinFunctions.xml...
+INFO: [HD-ArchReader 4] Loading io standards from C:/Xilinx/12.1/ISE_DS/PlanAhead/./parts/xilinx/spartan6/IOStandards.xml
+INFO: [HD-ArchReader 12] Loading device configuration modes from C:/Xilinx/12.1/ISE_DS/PlanAhead/parts/xilinx/spartan6/ConfigModes.xml
+INFO: [HD-GDRC 0] Loading list of drcs for the architecture : C:/Xilinx/12.1/ISE_DS/PlanAhead/./parts/xilinx/spartan6/drc.xml
+INFO: [HD-UCFReader 0] Parsing UCF File : .\sumavg_dp.ucf
+INFO: [HD-UCFReader 1] Finished Parsing UCF File : .\sumavg_dp.ucf
+
+DESIGN RULE CHECK VIOLATION REPORT
+   Build: PlanAhead v12.1 by hdbuild
+          on  Fri Apr 23 10:13:54 PDT 2010
+  Report: by giulio on host PC-PIPH3LIN, pid 1404
+          on Sun Apr 21 11:30:11 2024
+
+REPORT SUMMARY
+            Netlist: sumavg_dp
+          Floorplan: <none>
+      Design limits: <entire design considered>
+             Checks: Mismatching Block
+                     Mismatching Pin
+                     Mismatching Attribute
+           Max vios: <unlimited>
+         Vios found: 34
+
+REPORT DETAILS
+ULMN#1
+Mismatching Block - <no location>
+RTL_GND No block of type RTL_GND exists in the Unisim library
+Related Vios: <none>
+
+ULMN#2
+Mismatching Block - <no location>
+RTL_PWR No block of type RTL_PWR exists in the Unisim library
+Related Vios: <none>
+
+ULMN#3
+Mismatching Block - <no location>
+RTL_X No block of type RTL_X exists in the Unisim library
+Related Vios: <none>
+
+ULMN#4
+Mismatching Block - <no location>
+RTL_INV No block of type RTL_INV exists in the Unisim library
+Related Vios: <none>
+
+ULMN#5
+Mismatching Block - <no location>
+RTL_mux_32 No block of type RTL_mux_32 exists in the Unisim library
+Related Vios: <none>
+
+ULMN#6
+Mismatching Block - <no location>
+RTL_DLATCHRS No block of type RTL_DLATCHRS exists in the Unisim library
+Related Vios: <none>
+
+ULMN#7
+Mismatching Block - <no location>
+RTL_add_12u_12u No block of type RTL_add_12u_12u exists in the Unisim library
+Related Vios: <none>
+
+ULMN#8
+Mismatching Block - <no location>
+RTL_mux_12 No block of type RTL_mux_12 exists in the Unisim library
+Related Vios: <none>
+
+ULMN#9
+Mismatching Block - <no location>
+RTL_add_8u_8u No block of type RTL_add_8u_8u exists in the Unisim library
+Related Vios: <none>
+
+ULMN#10
+Mismatching Block - <no location>
+RTL_mux_8 No block of type RTL_mux_8 exists in the Unisim library
+Related Vios: <none>
+
+ULMN#11
+Mismatching Block - <no location>
+RTL_add_32u_32u No block of type RTL_add_32u_32u exists in the Unisim library
+Related Vios: <none>
+
+ULMN#12
+Mismatching Block - <no location>
+RTL_LessThan_32u_32u No block of type RTL_LessThan_32u_32u exists in the Unisim library
+Related Vios: <none>
+
+ULMN#13
+Mismatching Block - <no location>
+RTL_equal_31 No block of type RTL_equal_31 exists in the Unisim library
+Related Vios: <none>
+
+ULMN#14
+Mismatching Block - <no location>
+RTL_not_equal_32 No block of type RTL_not_equal_32 exists in the Unisim library
+Related Vios: <none>
+
+ULMN#15
+Mismatching Block - <no location>
+RTL_mux_2 No block of type RTL_mux_2 exists in the Unisim library
+Related Vios: <none>
+
+ULMN#16
+Mismatching Block - <no location>
+RTL_wide_mux_2_8 No block of type RTL_wide_mux_2_8 exists in the Unisim library
+Related Vios: <none>
+
+ULMN#17
+Mismatching Block - <no location>
+RTL_AND No block of type RTL_AND exists in the Unisim library
+Related Vios: <none>
+
+ULMN#18
+Mismatching Block - <no location>
+RTL_wide_fdcpe_2 No block of type RTL_wide_fdcpe_2 exists in the Unisim library
+Related Vios: <none>
+
+ULMN#19
+Mismatching Block - <no location>
+RTL_equal_2 No block of type RTL_equal_2 exists in the Unisim library
+Related Vios: <none>
+
+ULMN#20
+Mismatching Block - <no location>
+RTL_OR No block of type RTL_OR exists in the Unisim library
+Related Vios: <none>
+
+ULMN#21
+Mismatching Block - <no location>
+RTL_wide_fdcpe_6 No block of type RTL_wide_fdcpe_6 exists in the Unisim library
+Related Vios: <none>
+
+ULMN#22
+Mismatching Block - <no location>
+RTL_wide_fdcpe_64 No block of type RTL_wide_fdcpe_64 exists in the Unisim library
+Related Vios: <none>
+
+ULMN#23
+Mismatching Block - <no location>
+RTL_wide_fdcpe_32 No block of type RTL_wide_fdcpe_32 exists in the Unisim library
+Related Vios: <none>
+
+ULMN#24
+Mismatching Block - <no location>
+RTL_wide_mux_2_256 No block of type RTL_wide_mux_2_256 exists in the Unisim library
+Related Vios: <none>
+
+ULMN#25
+Mismatching Block - <no location>
+RTL_wide_mux_2_128 No block of type RTL_wide_mux_2_128 exists in the Unisim library
+Related Vios: <none>
+
+ULMN#26
+Mismatching Block - <no location>
+RTL_sub_34 No block of type RTL_sub_34 exists in the Unisim library
+Related Vios: <none>
+
+ULMN#27
+Mismatching Block - <no location>
+RTL_sub_7 No block of type RTL_sub_7 exists in the Unisim library
+Related Vios: <none>
+
+ULMN#28
+Mismatching Block - <no location>
+RTL_equal_1 No block of type RTL_equal_1 exists in the Unisim library
+Related Vios: <none>
+
+ULMN#29
+Mismatching Block - <no location>
+RTL_mux_6 No block of type RTL_mux_6 exists in the Unisim library
+Related Vios: <none>
+
+ULMN#30
+Mismatching Block - <no location>
+RTL_equal_6 No block of type RTL_equal_6 exists in the Unisim library
+Related Vios: <none>
+
+ULMN#31
+Mismatching Block - <no location>
+RTL_MUX No block of type RTL_MUX exists in the Unisim library
+Related Vios: <none>
+
+ULMN#32
+Mismatching Block - <no location>
+RTL_wide_fdcpe_12 No block of type RTL_wide_fdcpe_12 exists in the Unisim library
+Related Vios: <none>
+
+ULMN#33
+Mismatching Block - <no location>
+RTL_wide_fdrse_32 No block of type RTL_wide_fdrse_32 exists in the Unisim library
+Related Vios: <none>
+
+ULMN#34
+Mismatching Block - <no location>
+RTL_wide_fdcpe_8 No block of type RTL_wide_fdcpe_8 exists in the Unisim library
+Related Vios: <none>
+
+INFO: [HD-LIB 0] Reading timing library C:/Xilinx/12.1/ISE_DS/PlanAhead/./parts/xilinx/spartan6/spartan6.lib .
+INFO: [HD-LIB 1] Done reading timing library C:/Xilinx/12.1/ISE_DS/PlanAhead/./parts/xilinx/spartan6/spartan6.lib .
+elab_constrs_1
+#-----------------------------------------------------------
+# End of session at: 4/21/24 2:47:02 PM
+# Process ID: 1404
+#-----------------------------------------------------------
