@@ -1,0 +1,4 @@
+vhdl work "../../../Downloads/Sumavg-main/dividerDP.vhdl"
+vhdl work "../../../Downloads/Sumavg-main/dividerCU.vhdl"
+vhdl work "../../../Downloads/Sumavg-main/divider.vhdl"
+vhdl work "../../../Downloads/Sumavg-main/sumavgDP.vhdl"

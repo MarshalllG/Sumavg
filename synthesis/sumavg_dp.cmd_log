@@ -1,0 +1,9 @@
+xst -intstyle ise -ifn "C:/Users/giulio/Desktop/sumavg/synthesis/sumavg_dp.xst" -ofn "C:/Users/giulio/Desktop/sumavg/synthesis/sumavg_dp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx45-csg324-3 sumavg_dp.ngc sumavg_dp.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sumavg_dp.ucf -p xc6slx45-csg324-3 sumavg_dp.ngc sumavg_dp.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -ol high -t 1 -xt 0 -register_duplication off -global_opt off -ir off -pr off -lc off -power off -o sumavg_dp_map.ncd sumavg_dp.ngd sumavg_dp.pcf 
+par -w -intstyle ise -ol high sumavg_dp_map.ncd sumavg_dp.ncd sumavg_dp.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sumavg_dp.twx sumavg_dp.ncd -o sumavg_dp.twr sumavg_dp.pcf -ucf sumavg_dp.ucf 
+xpwr -intstyle ise sumavg_dp.ncd sumavg_dp.pcf -o sumavg_dp.pwr 
+netgen -intstyle ise -s 3  -pcf sumavg_dp.pcf -rpw 100 -tpw 0 -ar Structure -tm sumavg_dp -insert_pp_buffers true -w -dir netgen/par -ofmt vhdl -sim sumavg_dp.ncd sumavg_dp_timesim.vhd 
+bitgen -intstyle ise -f sumavg_dp.ut sumavg_dp.ncd 
