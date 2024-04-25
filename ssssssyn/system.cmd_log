@@ -1,0 +1,42 @@
+xst -intstyle ise -ifn "C:/Users/giulio/Desktop/sumavg/ssssssyn/system.xst" -ofn "C:/Users/giulio/Desktop/sumavg/ssssssyn/system.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../../Downloads -nt timestamp -i -p xc6slx45-csg324-3 system.ngc system.ngd  
+xst -intstyle ise -ifn "C:/Users/giulio/Desktop/sumavg/ssssssyn/system.xst" -ofn "C:/Users/giulio/Desktop/sumavg/ssssssyn/system.syr" 
+xst -intstyle ise -ifn "C:/Users/giulio/Desktop/sumavg/ssssssyn/system.xst" -ofn "C:/Users/giulio/Desktop/sumavg/ssssssyn/system.syr" 
+xst -intstyle ise -ifn "C:/Users/giulio/Desktop/sumavg/ssssssyn/system.xst" -ofn "C:/Users/giulio/Desktop/sumavg/ssssssyn/system.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../../Downloads -nt timestamp -i -p xc6slx45-csg324-3 system.ngc system.ngd  
+xst -intstyle ise -ifn "C:/Users/giulio/Desktop/sumavg/ssssssyn/system.xst" -ofn "C:/Users/giulio/Desktop/sumavg/ssssssyn/system.syr" 
+xst -intstyle ise -ifn "C:/Users/giulio/Desktop/sumavg/ssssssyn/system.xst" -ofn "C:/Users/giulio/Desktop/sumavg/ssssssyn/system.syr" 
+xst -intstyle ise -ifn "C:/Users/giulio/Desktop/sumavg/ssssssyn/system.xst" -ofn "C:/Users/giulio/Desktop/sumavg/ssssssyn/system.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../../Downloads -nt timestamp -i -p xc6slx45-csg324-3 system.ngc system.ngd  
+xst -intstyle ise -ifn "C:/Users/giulio/Desktop/sumavg/ssssssyn/system.xst" -ofn "C:/Users/giulio/Desktop/sumavg/ssssssyn/system.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../../Downloads -nt timestamp -i -p xc6slx45-csg324-3 system.ngc system.ngd  
+xst -intstyle ise -ifn "C:/Users/giulio/Desktop/sumavg/ssssssyn/system.xst" -ofn "C:/Users/giulio/Desktop/sumavg/ssssssyn/system.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../../Downloads -nt timestamp -i -p xc6slx45-csg324-3 system.ngc system.ngd  
+xst -intstyle ise -ifn "C:/Users/giulio/Desktop/sumavg/ssssssyn/system.xst" -ofn "C:/Users/giulio/Desktop/sumavg/ssssssyn/system.syr" 
+xst -intstyle ise -ifn "C:/Users/giulio/Desktop/sumavg/ssssssyn/system.xst" -ofn "C:/Users/giulio/Desktop/sumavg/ssssssyn/system.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../../Downloads -nt timestamp -i -p xc6slx45-csg324-3 system.ngc system.ngd  
+xst -intstyle ise -ifn "C:/Users/giulio/Desktop/sumavg/ssssssyn/system.xst" -ofn "C:/Users/giulio/Desktop/sumavg/ssssssyn/system.syr" 
+xst -intstyle ise -ifn "C:/Users/giulio/Desktop/sumavg/ssssssyn/system.xst" -ofn "C:/Users/giulio/Desktop/sumavg/ssssssyn/system.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../../Downloads -nt timestamp -i -p xc6slx45-csg324-3 system.ngc system.ngd  
+xst -intstyle ise -ifn "C:/Users/giulio/Desktop/sumavg/ssssssyn/system.xst" -ofn "C:/Users/giulio/Desktop/sumavg/ssssssyn/system.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../../Downloads -nt timestamp -i -p xc6slx45-csg324-3 system.ngc system.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -ol high -t 1 -xt 0 -register_duplication off -global_opt off -ir off -pr off -lc off -power off -o system_map.ncd system.ngd system.pcf 
+par -w -intstyle ise -ol high system_map.ncd system.ncd system.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml system.twx system.ncd -o system.twr system.pcf 
+netgen -intstyle ise -s 3  -pcf system.pcf -rpw 100 -tpw 0 -ar Structure -tm system -insert_pp_buffers true -w -dir netgen/par -ofmt vhdl -sim system.ncd system_timesim.vhd 
+xst -intstyle ise -ifn "C:/Users/giulio/Desktop/sumavg/ssssssyn/system.xst" -ofn "C:/Users/giulio/Desktop/sumavg/ssssssyn/system.syr" 
+xst -intstyle ise -ifn "C:/Users/giulio/Desktop/sumavg/ssssssyn/system.xst" -ofn "C:/Users/giulio/Desktop/sumavg/ssssssyn/system.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../../Downloads -nt timestamp -i -p xc6slx45-csg324-3 system.ngc system.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -ol high -t 1 -xt 0 -register_duplication off -global_opt off -ir off -pr off -lc off -power off -o system_map.ncd system.ngd system.pcf 
+par -w -intstyle ise -ol high system_map.ncd system.ncd system.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml system.twx system.ncd -o system.twr system.pcf 
+xst -intstyle ise -ifn "C:/Users/giulio/Desktop/sumavg/ssssssyn/system.xst" -ofn "C:/Users/giulio/Desktop/sumavg/ssssssyn/system.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../../Downloads -nt timestamp -i -p xc6slx45-csg324-3 system.ngc system.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -ol high -t 1 -xt 0 -register_duplication off -global_opt off -ir off -pr off -lc off -power off -o system_map.ncd system.ngd system.pcf 
+par -w -intstyle ise -ol high system_map.ncd system.ncd system.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml system.twx system.ncd -o system.twr system.pcf 
+netgen -intstyle ise -s 3  -pcf system.pcf -rpw 100 -tpw 0 -ar Structure -tm system -insert_pp_buffers true -w -dir netgen/par -ofmt vhdl -sim system.ncd system_timesim.vhd 
+bitgen -intstyle ise -f system.ut system.ncd 
+xst -intstyle ise -ifn "C:/Users/giulio/Desktop/sumavg/ssssssyn/system.xst" -ofn "C:/Users/giulio/Desktop/sumavg/ssssssyn/system.syr" 
+xst -intstyle ise -ifn "C:/Users/giulio/Desktop/sumavg/ssssssyn/system.xst" -ofn "C:/Users/giulio/Desktop/sumavg/ssssssyn/system.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../../Downloads -nt timestamp -i -p xc6slx45-csg324-3 system.ngc system.ngd  

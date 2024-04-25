@@ -1,0 +1,244 @@
+--------------------------------------------------------------------------------
+Release 12.1 Trace  (nt)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\12.1\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 3 -n
+3 -fastpaths -xml system.twx system.ncd -o system.twr system.pcf
+
+Design file:              system.ncd
+Physical constraint file: system.pcf
+Device,package,speed:     xc6slx45,csg324,C,-3 (PRELIMINARY 1.08 2010-04-09)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock CLK
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+rst_n       |    3.705(R)|      SLOW  |    0.076(R)|      SLOW  |CLK_BUFGP         |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock sys_input<32>
+-------------+------------+------------+------------+------------+------------------+--------+
+             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source       | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+-------------+------------+------------+------------+------------+------------------+--------+
+sys_input<24>|   -3.939(F)|      FAST  |    7.464(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<25>|   -3.970(F)|      FAST  |    7.536(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<26>|   -3.714(F)|      FAST  |    7.163(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<27>|   -3.745(F)|      FAST  |    7.235(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<28>|   -3.415(F)|      FAST  |    6.717(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<29>|   -3.446(F)|      FAST  |    6.789(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<30>|   -3.283(F)|      FAST  |    6.506(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<31>|   -3.314(F)|      FAST  |    6.578(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+-------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock sys_input<33>
+-------------+------------+------------+------------+------------+------------------+--------+
+             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source       | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+-------------+------------+------------+------------+------------+------------------+--------+
+sys_input<24>|   -3.877(F)|      FAST  |    7.360(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<25>|   -3.908(F)|      FAST  |    7.432(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<26>|   -3.652(F)|      FAST  |    7.059(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<27>|   -3.683(F)|      FAST  |    7.131(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<28>|   -3.353(F)|      FAST  |    6.613(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<29>|   -3.384(F)|      FAST  |    6.685(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<30>|   -3.221(F)|      FAST  |    6.402(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<31>|   -3.252(F)|      FAST  |    6.474(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+-------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock sys_input<34>
+-------------+------------+------------+------------+------------+------------------+--------+
+             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source       | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+-------------+------------+------------+------------+------------+------------------+--------+
+sys_input<24>|   -3.620(F)|      FAST  |    6.994(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<25>|   -3.651(F)|      FAST  |    7.066(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<26>|   -3.395(F)|      FAST  |    6.693(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<27>|   -3.426(F)|      FAST  |    6.765(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<28>|   -3.096(F)|      FAST  |    6.247(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<29>|   -3.127(F)|      FAST  |    6.319(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<30>|   -2.964(F)|      FAST  |    6.036(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<31>|   -2.995(F)|      FAST  |    6.108(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+-------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock sys_input<35>
+-------------+------------+------------+------------+------------+------------------+--------+
+             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source       | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+-------------+------------+------------+------------+------------+------------------+--------+
+sys_input<24>|   -3.653(F)|      FAST  |    6.882(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<25>|   -3.684(F)|      FAST  |    6.954(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<26>|   -3.428(F)|      FAST  |    6.581(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<27>|   -3.459(F)|      FAST  |    6.653(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<28>|   -3.129(F)|      FAST  |    6.135(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<29>|   -3.160(F)|      FAST  |    6.207(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<30>|   -2.997(F)|      FAST  |    5.924(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<31>|   -3.028(F)|      FAST  |    5.996(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+-------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock sys_input<36>
+-------------+------------+------------+------------+------------+------------------+--------+
+             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source       | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+-------------+------------+------------+------------+------------+------------------+--------+
+sys_input<24>|   -3.451(F)|      FAST  |    6.542(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<25>|   -3.482(F)|      FAST  |    6.614(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<26>|   -3.226(F)|      FAST  |    6.241(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<27>|   -3.257(F)|      FAST  |    6.313(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<28>|   -2.927(F)|      FAST  |    5.795(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<29>|   -2.958(F)|      FAST  |    5.867(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<30>|   -2.795(F)|      FAST  |    5.584(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<31>|   -2.826(F)|      FAST  |    5.656(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+-------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock sys_input<37>
+-------------+------------+------------+------------+------------+------------------+--------+
+             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source       | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+-------------+------------+------------+------------+------------+------------------+--------+
+sys_input<24>|   -3.482(F)|      FAST  |    6.609(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<25>|   -3.513(F)|      FAST  |    6.681(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<26>|   -3.257(F)|      FAST  |    6.308(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<27>|   -3.288(F)|      FAST  |    6.380(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<28>|   -2.958(F)|      FAST  |    5.862(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<29>|   -2.989(F)|      FAST  |    5.934(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<30>|   -2.826(F)|      FAST  |    5.651(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<31>|   -2.857(F)|      FAST  |    5.723(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+-------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock sys_input<38>
+-------------+------------+------------+------------+------------+------------------+--------+
+             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source       | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+-------------+------------+------------+------------+------------+------------------+--------+
+sys_input<24>|   -3.711(F)|      FAST  |    7.034(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<25>|   -3.742(F)|      FAST  |    7.106(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<26>|   -3.486(F)|      FAST  |    6.733(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<27>|   -3.517(F)|      FAST  |    6.805(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<28>|   -3.187(F)|      FAST  |    6.287(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<29>|   -3.218(F)|      FAST  |    6.359(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<30>|   -3.055(F)|      FAST  |    6.076(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<31>|   -3.086(F)|      FAST  |    6.148(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+-------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock sys_input<39>
+-------------+------------+------------+------------+------------+------------------+--------+
+             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source       | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+-------------+------------+------------+------------+------------+------------------+--------+
+sys_input<24>|   -3.543(F)|      FAST  |    6.759(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<25>|   -3.574(F)|      FAST  |    6.831(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<26>|   -3.318(F)|      FAST  |    6.458(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<27>|   -3.349(F)|      FAST  |    6.530(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<28>|   -3.019(F)|      FAST  |    6.012(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<29>|   -3.050(F)|      FAST  |    6.084(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<30>|   -2.887(F)|      FAST  |    5.801(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<31>|   -2.918(F)|      FAST  |    5.873(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+-------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock sys_start
+-------------+------------+------------+------------+------------+------------------+--------+
+             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source       | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+-------------+------------+------------+------------+------------+------------------+--------+
+sys_input<24>|   -3.295(F)|      FAST  |    6.190(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<25>|   -3.326(F)|      FAST  |    6.262(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<26>|   -3.070(F)|      FAST  |    5.889(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<27>|   -3.101(F)|      FAST  |    5.961(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<28>|   -2.771(F)|      FAST  |    5.443(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<29>|   -2.802(F)|      FAST  |    5.515(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<30>|   -2.639(F)|      FAST  |    5.232(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+sys_input<31>|   -2.670(F)|      FAST  |    5.304(F)|      SLOW  |DIS/set_dev_len   |   0.000|
+-------------+------------+------------+------------+------------+------------------+--------+
+
+Clock CLK to Pad
+--------------+-----------------+------------+-----------------+------------+------------------+--------+
+              |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination   |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+--------------+-----------------+------------+-----------------+------------+------------------+--------+
+sys_done      |        10.996(R)|      SLOW  |         5.612(R)|      FAST  |CLK_BUFGP         |   0.000|
+sys_output<0> |         8.461(R)|      SLOW  |         4.160(R)|      FAST  |CLK_BUFGP         |   0.000|
+sys_output<1> |         8.523(R)|      SLOW  |         4.184(R)|      FAST  |CLK_BUFGP         |   0.000|
+sys_output<2> |         8.392(R)|      SLOW  |         4.116(R)|      FAST  |CLK_BUFGP         |   0.000|
+sys_output<3> |         8.565(R)|      SLOW  |         4.268(R)|      FAST  |CLK_BUFGP         |   0.000|
+sys_output<4> |         8.345(R)|      SLOW  |         4.093(R)|      FAST  |CLK_BUFGP         |   0.000|
+sys_output<5> |         8.542(R)|      SLOW  |         4.232(R)|      FAST  |CLK_BUFGP         |   0.000|
+sys_output<6> |         8.502(R)|      SLOW  |         4.216(R)|      FAST  |CLK_BUFGP         |   0.000|
+sys_output<7> |         8.438(R)|      SLOW  |         4.150(R)|      FAST  |CLK_BUFGP         |   0.000|
+sys_output<8> |         8.193(R)|      SLOW  |         4.061(R)|      FAST  |CLK_BUFGP         |   0.000|
+sys_output<9> |         8.234(R)|      SLOW  |         4.088(R)|      FAST  |CLK_BUFGP         |   0.000|
+sys_output<10>|         8.457(R)|      SLOW  |         4.184(R)|      FAST  |CLK_BUFGP         |   0.000|
+sys_output<11>|         7.864(R)|      SLOW  |         3.769(R)|      FAST  |CLK_BUFGP         |   0.000|
+sys_output<12>|         7.947(R)|      SLOW  |         3.811(R)|      FAST  |CLK_BUFGP         |   0.000|
+sys_output<13>|         7.731(R)|      SLOW  |         3.722(R)|      FAST  |CLK_BUFGP         |   0.000|
+sys_output<14>|         7.814(R)|      SLOW  |         3.764(R)|      FAST  |CLK_BUFGP         |   0.000|
+sys_output<15>|         7.916(R)|      SLOW  |         3.806(R)|      FAST  |CLK_BUFGP         |   0.000|
+sys_output<16>|         8.000(R)|      SLOW  |         3.839(R)|      FAST  |CLK_BUFGP         |   0.000|
+sys_output<17>|         7.981(R)|      SLOW  |         3.832(R)|      FAST  |CLK_BUFGP         |   0.000|
+sys_output<18>|         8.060(R)|      SLOW  |         3.873(R)|      FAST  |CLK_BUFGP         |   0.000|
+sys_output<19>|         8.034(R)|      SLOW  |         3.890(R)|      FAST  |CLK_BUFGP         |   0.000|
+sys_output<20>|         8.034(R)|      SLOW  |         3.890(R)|      FAST  |CLK_BUFGP         |   0.000|
+sys_output<21>|         8.246(R)|      SLOW  |         3.958(R)|      FAST  |CLK_BUFGP         |   0.000|
+sys_output<22>|         7.997(R)|      SLOW  |         3.821(R)|      FAST  |CLK_BUFGP         |   0.000|
+sys_output<23>|         8.264(R)|      SLOW  |         3.981(R)|      FAST  |CLK_BUFGP         |   0.000|
+sys_output<24>|         7.730(R)|      SLOW  |         3.721(R)|      FAST  |CLK_BUFGP         |   0.000|
+sys_output<25>|         8.017(R)|      SLOW  |         3.871(R)|      FAST  |CLK_BUFGP         |   0.000|
+sys_output<26>|         7.934(R)|      SLOW  |         3.829(R)|      FAST  |CLK_BUFGP         |   0.000|
+sys_output<27>|         8.350(R)|      SLOW  |         4.098(R)|      FAST  |CLK_BUFGP         |   0.000|
+sys_output<28>|         8.328(R)|      SLOW  |         4.087(R)|      FAST  |CLK_BUFGP         |   0.000|
+sys_output<29>|         8.421(R)|      SLOW  |         4.164(R)|      FAST  |CLK_BUFGP         |   0.000|
+sys_output<30>|         8.719(R)|      SLOW  |         4.302(R)|      FAST  |CLK_BUFGP         |   0.000|
+sys_output<31>|         8.117(R)|      SLOW  |         3.946(R)|      FAST  |CLK_BUFGP         |   0.000|
+--------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    4.874|         |         |         |
+sys_input<32>  |    4.021|    8.725|         |         |
+sys_input<33>  |    3.917|    8.725|         |         |
+sys_input<34>  |    3.551|    8.725|         |         |
+sys_input<35>  |    3.439|    8.725|         |         |
+sys_input<36>  |    3.266|    8.725|         |         |
+sys_input<37>  |    3.166|    8.725|         |         |
+sys_input<38>  |    3.591|    8.725|         |         |
+sys_input<39>  |    3.316|    8.725|         |         |
+sys_start      |    3.283|    8.725|         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Thu Apr 25 14:45:40 2024 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 184 MB
+
+
+
