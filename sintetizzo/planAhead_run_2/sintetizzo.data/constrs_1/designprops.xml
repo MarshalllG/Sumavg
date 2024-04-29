@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<Compat Version="1" Minor="2">
+	<CompatParts>
+	</CompatParts>
+	<ConfigModes>
+		<Mode Id="JTAG"/>
+	</ConfigModes>
+</Compat>
+

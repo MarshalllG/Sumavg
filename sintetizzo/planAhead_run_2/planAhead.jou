@@ -1,0 +1,41 @@
+#-----------------------------------------------------------
+# PlanAhead v12.1
+# Build 61553 by hdbuild on Fri Apr 23 10:13:54 PDT 2010
+# Start of session at: 4/29/24 5:46:05 PM
+# Process ID: 4052
+#-----------------------------------------------------------
+source C:/Users/giulio/Desktop/sumavg/sintetizzo/pa.fromNetlist.tcl
+# create_project -name sintetizzo -dir "C:/Users/giulio/Desktop/sumavg/sintetizzo/planAhead_run_2" -part xc6slx45csg324-3
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "C:/Users/giulio/Desktop/sumavg/sintetizzo/toplevel.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {C:/Users/giulio/Desktop/sumavg/sintetizzo} {../../sumavg2-main} }
+# set_param project.pinAheadLayout  yes
+# set_param project.paUcfFile  "toplevel.ucf"
+# add_files "toplevel.ucf" -fileset [get_property constrset [current_run]]
+# open_netlist_design
+startgroup
+set_property site PAD103 [get_ports CLK]
+set_property is_fixed true  [get_ports CLK]
+endgroup
+startgroup
+set_property site PAD42 [get_ports RXD]
+set_property is_fixed true  [get_ports RXD]
+endgroup
+set_property site "" [get_ports RXD]
+startgroup
+set_property site PAD46 [get_ports RXD]
+set_property is_fixed true  [get_ports RXD]
+endgroup
+startgroup
+set_property site PAD45 [get_ports TXD]
+set_property is_fixed true  [get_ports TXD]
+endgroup
+startgroup
+set_property site PAD160 [get_ports rst_n]
+set_property is_fixed true  [get_ports rst_n]
+endgroup
+save_design
+#-----------------------------------------------------------
+# End of session at: 4/29/24 5:52:32 PM
+# Process ID: 4052
+#-----------------------------------------------------------

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<DARoots Version="1" Minor="6">
+	<FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+		<Filter Type="EDIFSrcs"/>
+		<Root Path="C:/Users/giulio/Desktop/sumavg/sintetizzo" Recursive="FALSE">
+		</Root>
+		<Root Path="C:/Users/giulio/Desktop/sumavg/sintetizzo" Recursive="FALSE">
+		</Root>
+		<Root Path="C:/Users/giulio/Desktop/sumavg2-main" Recursive="FALSE">
+		</Root>
+		<Root Path="$PDATADIR/sources_1/hd.xml">
+			<Src SFType="HDDb"/>
+		</Root>
+		<Root Path="$PDATADIR/sources_1/ports.xml">
+			<Src SFType="PortsDb"/>
+		</Root>
+		<Root Path="$PDATADIR/sources_1/chipscope.xml">
+			<Src SFType="ChipscopeDb"/>
+		</Root>
+		<Config>
+			<Option Name="DesignMode" Val="GateLvl"/>
+			<Option Name="GateLvlMode" Val="EDIF"/>
+			<Option Name="TopFile" Val="C:/Users/giulio/Desktop/sumavg/sintetizzo/toplevel.ngc"/>
+		</Config>
+	</FileSet>
+</DARoots>
+

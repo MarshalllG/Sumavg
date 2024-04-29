@@ -1,0 +1,178 @@
+INFO: [HD-Application 1] Opened log file C:/Users/giulio/Desktop/sumavg/sintetizzo/planAhead_run_1/planAhead.log
+INFO: [HD-Application 2] Opened journal file C:/Users/giulio/Desktop/sumavg/sintetizzo/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+# PlanAhead v12.1
+# Build 61553 by hdbuild on Fri Apr 23 10:13:54 PDT 2010
+# Start of session at: 4/29/24 5:31:43 PM
+# Process ID: 856
+#-----------------------------------------------------------
+INFO: [HD-Licensing 4] Feature available: PartialReconfiguration
+source C:/Users/giulio/Desktop/sumavg/sintetizzo/pa.fromHdl.tcl
+# create_project -name sintetizzo -dir "C:/Users/giulio/Desktop/sumavg/sintetizzo/planAhead_run_1" -part xc6slx45csg324-3
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property top toplevel $srcset
+# set_param project.paUcfFile  "toplevel.ucf"
+# set hdlfile [add_files [list {../../sumavg2-main/dividerDP.vhdl}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../../sumavg2-main/dividerCU.vhdl}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../../sumavg2-main/divider.vhdl}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../../sumavg2-main/sumavgDP.vhdl}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../../sumavg2-main/sumavgCU.vhdl}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../../sumavg2-main/memmuxDP.vhdl}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../../sumavg2-main/memmuxCU.vhdl}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../../sumavg2-main/memaccessDP.vhdl}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../../sumavg2-main/memaccessCU.vhdl}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../../sumavg2-main/dispatcherDP.vhdl}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../../sumavg2-main/dispatcherCU.vhdl}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../../sumavg2-main/sumavg.vhdl}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../../sumavg2-main/memory.vhdl}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../../sumavg2-main/memmux.vhdl}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../../sumavg2-main/memaccess.vhdl}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../../sumavg2-main/dispatcher.vhdl}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../../sumavg2-main/system.vhdl}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../../sumavg2-main/toplevel.vhdl}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../../sumavg2-main/divider_pkg.vhdl}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# add_files "toplevel.ucf" -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx45csg324-3
+INFO: [HD-RTLIN 2] Parsing VHDL file "C:\Xilinx\12.1\ISE_DS\PlanAhead\parts\xilinx\rtl\lib\synplify\synattr.vhd" into library synplify
+INFO: [HD-RTLIN 2] Parsing package <attributes>.
+INFO: [HD-RTLIN 2] Parsing VHDL file "C:\Xilinx\12.1\ISE_DS\PlanAhead\parts\xilinx\rtl\lib\synplify\synattr.vhd" into library synplify
+INFO: [HD-RTLIN 2] Parsing package <attributes>.
+INFO: [HD-RTLIN 2] Parsing VHDL file "C:\Users\giulio\Desktop\sumavg2-main\dividerDP.vhdl" into library work
+INFO: [HD-RTLIN 2] Parsing package <divider_dp_pkg>.
+INFO: [HD-RTLIN 2] Parsing entity <divider_dp>.
+INFO: [HD-RTLIN 2] Parsing architecture <s> of entity <divider_dp>.
+INFO: [HD-RTLIN 2] Parsing VHDL file "C:\Users\giulio\Desktop\sumavg2-main\dividerCU.vhdl" into library work
+INFO: [HD-RTLIN 2] Parsing package <divider_ctrl_pkg>.
+INFO: [HD-RTLIN 2] Parsing entity <divider_ctrl>.
+INFO: [HD-RTLIN 2] Parsing architecture <s> of entity <divider_ctrl>.
+INFO: [HD-RTLIN 2] Parsing VHDL file "C:\Users\giulio\Desktop\sumavg2-main\divider.vhdl" into library work
+INFO: [HD-RTLIN 2] Parsing package <divider_pkg>.
+INFO: [HD-RTLIN 2] Parsing entity <divider>.
+INFO: [HD-RTLIN 2] Parsing architecture <s> of entity <divider>.
+INFO: [HD-RTLIN 2] Parsing VHDL file "C:\Users\giulio\Desktop\sumavg2-main\sumavgDP.vhdl" into library work
+INFO: [HD-RTLIN 2] Parsing package <sumavg_dp_pkg>.
+INFO: [HD-RTLIN 2] Parsing entity <sumavg_dp>.
+INFO: [HD-RTLIN 2] Parsing architecture <s> of entity <sumavg_dp>.
+INFO: [HD-RTLIN 2] Parsing VHDL file "C:\Users\giulio\Desktop\sumavg2-main\sumavgCU.vhdl" into library work
+INFO: [HD-RTLIN 2] Parsing package <sumavg_ctrl_pkg>.
+INFO: [HD-RTLIN 2] Parsing entity <sumavg_ctrl>.
+INFO: [HD-RTLIN 2] Parsing architecture <behav> of entity <sumavg_ctrl>.
+INFO: [HD-RTLIN 2] Parsing VHDL file "C:\Users\giulio\Desktop\sumavg2-main\memmuxDP.vhdl" into library work
+INFO: [HD-RTLIN 2] Parsing package <memmux_dp_pkg>.
+INFO: [HD-RTLIN 2] Parsing entity <memmux_dp>.
+INFO: [HD-RTLIN 2] Parsing architecture <s> of entity <memmux_dp>.
+INFO: [HD-RTLIN 2] Parsing VHDL file "C:\Users\giulio\Desktop\sumavg2-main\memmuxCU.vhdl" into library work
+INFO: [HD-RTLIN 2] Parsing package <memmux_ctrl_pkg>.
+INFO: [HD-RTLIN 2] Parsing entity <memmux_ctrl>.
+INFO: [HD-RTLIN 2] Parsing architecture <behav> of entity <memmux_ctrl>.
+INFO: [HD-RTLIN 2] Parsing VHDL file "C:\Users\giulio\Desktop\sumavg2-main\memaccessDP.vhdl" into library work
+INFO: [HD-RTLIN 2] Parsing package <memaccess_dp_pkg>.
+INFO: [HD-RTLIN 2] Parsing entity <memaccess_dp>.
+INFO: [HD-RTLIN 2] Parsing architecture <s> of entity <memaccess_dp>.
+INFO: [HD-RTLIN 2] Parsing VHDL file "C:\Users\giulio\Desktop\sumavg2-main\memaccessCU.vhdl" into library work
+INFO: [HD-RTLIN 2] Parsing package <memaccess_ctrl_pkg>.
+INFO: [HD-RTLIN 2] Parsing entity <memaccess_ctrl>.
+INFO: [HD-RTLIN 2] Parsing architecture <behav> of entity <memaccess_ctrl>.
+INFO: [HD-RTLIN 2] Parsing VHDL file "C:\Users\giulio\Desktop\sumavg2-main\dispatcherDP.vhdl" into library work
+INFO: [HD-RTLIN 2] Parsing package <dispatcher_dp_pkg>.
+INFO: [HD-RTLIN 2] Parsing entity <dispatcher_dp>.
+INFO: [HD-RTLIN 2] Parsing architecture <s> of entity <dispatcher_dp>.
+INFO: [HD-RTLIN 2] Parsing VHDL file "C:\Users\giulio\Desktop\sumavg2-main\dispatcherCU.vhdl" into library work
+INFO: [HD-RTLIN 2] Parsing package <dispatcher_ctrl_pkg>.
+INFO: [HD-RTLIN 2] Parsing entity <dispatcher_ctrl>.
+INFO: [HD-RTLIN 2] Parsing architecture <behav> of entity <dispatcher_ctrl>.
+INFO: [HD-RTLIN 2] Parsing VHDL file "C:\Users\giulio\Desktop\sumavg2-main\sumavg.vhdl" into library work
+INFO: [HD-RTLIN 2] Parsing package <sumavg_pkg>.
+INFO: [HD-RTLIN 2] Parsing entity <sumavg>.
+INFO: [HD-RTLIN 2] Parsing architecture <struct> of entity <sumavg>.
+INFO: [HD-RTLIN 2] Parsing VHDL file "C:\Users\giulio\Desktop\sumavg2-main\memory.vhdl" into library work
+INFO: [HD-RTLIN 2] Parsing entity <memory>.
+INFO: [HD-RTLIN 2] Parsing architecture <s> of entity <memory>.
+INFO: [HD-RTLIN 2] Parsing VHDL file "C:\Users\giulio\Desktop\sumavg2-main\memmux.vhdl" into library work
+INFO: [HD-RTLIN 2] Parsing package <memmux_pkg>.
+INFO: [HD-RTLIN 2] Parsing entity <memmux>.
+INFO: [HD-RTLIN 2] Parsing architecture <s> of entity <memmux>.
+INFO: [HD-RTLIN 2] Parsing VHDL file "C:\Users\giulio\Desktop\sumavg2-main\memaccess.vhdl" into library work
+INFO: [HD-RTLIN 2] Parsing package <memaccess_pkg>.
+INFO: [HD-RTLIN 2] Parsing entity <memaccess>.
+INFO: [HD-RTLIN 2] Parsing architecture <s> of entity <memaccess>.
+INFO: [HD-RTLIN 2] Parsing VHDL file "C:\Users\giulio\Desktop\sumavg2-main\dispatcher.vhdl" into library work
+INFO: [HD-RTLIN 2] Parsing package <dispatcher_pkg>.
+INFO: [HD-RTLIN 2] Parsing entity <dispatcher>.
+INFO: [HD-RTLIN 2] Parsing architecture <s> of entity <dispatcher>.
+INFO: [HD-RTLIN 2] Parsing VHDL file "C:\Users\giulio\Desktop\sumavg2-main\system.vhdl" into library work
+INFO: [HD-RTLIN 2] Parsing package <system_pkg>.
+INFO: [HD-RTLIN 2] Parsing entity <system>.
+INFO: [HD-RTLIN 2] Parsing architecture <rtl> of entity <system>.
+INFO: [HD-RTLIN 2] Parsing VHDL file "C:\Users\giulio\Desktop\sumavg2-main\toplevel.vhdl" into library work
+INFO: [HD-RTLIN 2] Parsing entity <toplevel>.
+INFO: [HD-RTLIN 2] Parsing architecture <rtl> of entity <toplevel>.
+INFO: [HD-RTLIN 2] Parsing VHDL file "C:\Users\giulio\Desktop\sumavg2-main\divider_pkg.vhdl" into library work
+INFO: [HD-RTLIN 2] Parsing package <divider_pkg>.
+WARN: [HD-RTLIN 1] N:/M.48/rtf/vhdl/xst/src/numeric_std.vhd(878) Range is empty (null range)
+WARN: [HD-RTLIN 1] N:/M.48/rtf/vhdl/xst/src/numeric_std.vhd(879) Range is empty (null range)
+INFO: [HD-RTLIN 2] Elaborating entity <toplevel> (architecture <rtl>) from library <work>.
+INFO: [HD-RTLIN 2] Elaborating entity <system> (architecture <rtl>) with generics from library <work>.
+INFO: [HD-RTLIN 2] Elaborating entity <dispatcher> (architecture <s>) with generics from library <work>.
+INFO: [HD-RTLIN 2] Elaborating entity <dispatcher_ctrl> (architecture <behav>) with generics from library <work>.
+INFO: [HD-RTLIN 1] C:\Users\giulio\Desktop\sumavg2-main\dispatcherCU.vhdl(109) Case statement is complete. Others clause is never selected and therefore discarded.
+INFO: [HD-RTLIN 2] Elaborating entity <dispatcher_dp> (architecture <s>) with generics from library <work>.
+WARN: [HD-RTLIN 1] C:\Users\giulio\Desktop\sumavg2-main\dispatcher.vhdl(89) Net <set_output> does not have a driver.
+INFO: [HD-RTLIN 2] Elaborating entity <memaccess> (architecture <s>) with generics from library <work>.
+INFO: [HD-RTLIN 2] Elaborating entity <memaccess_ctrl> (architecture <behav>) from library <work>.
+INFO: [HD-RTLIN 1] C:\Users\giulio\Desktop\sumavg2-main\memaccessCU.vhdl(85) Case statement is complete. Others clause is never selected and therefore discarded.
+INFO: [HD-RTLIN 2] Elaborating entity <memaccess_dp> (architecture <s>) with generics from library <work>.
+INFO: [HD-RTLIN 2] Elaborating entity <sumavg> (architecture <struct>) with generics from library <work>.
+INFO: [HD-RTLIN 2] Elaborating entity <sumavg_ctrl> (architecture <behav>) with generics from library <work>.
+INFO: [HD-RTLIN 2] Elaborating entity <sumavg_dp> (architecture <s>) with generics from library <work>.
+ERROR: [HD-RTLIN 3] C:\Users\giulio\Desktop\sumavg2-main\sumavgDP.vhdl(105) Value -2147483648 is out of target constraint range -2147483647 to 2147483647
+WARN: [HD-RTLIN 1] C:\Users\giulio\Desktop\sumavg2-main\sumavgDP.vhdl(159) new_input should be on the sensitivity list of the process
+INFO: [HD-RTLIN 2] Elaborating entity <divider> (architecture <s>) with generics from library <work>.
+INFO: [HD-RTLIN 1] C:\Users\giulio\Desktop\sumavg2-main\divider.vhdl(37) Execution of entity divider failed
+INFO: [HD-RTLIN 1] C:\Users\giulio\Desktop\sumavg2-main\sumavgDP.vhdl(60) Netlist sumavg_dp(32,12,8)(s) remains a blackbox, due to errors in its contents
+INFO: [HD-RTLIN 2] Elaborating entity <memmux> (architecture <s>) with generics from library <work>.
+INFO: [HD-RTLIN 2] Elaborating entity <memmux_ctrl> (architecture <behav>) from library <work>.
+INFO: [HD-RTLIN 1] C:\Users\giulio\Desktop\sumavg2-main\memmuxCU.vhdl(60) Case statement is complete. Others clause is never selected and therefore discarded.
+INFO: [HD-RTLIN 2] Elaborating entity <memmux_dp> (architecture <s>) with generics from library <work>.
+INFO: [HD-RTLIN 2] Elaborating entity <memory> (architecture <s>) from library <work>.
+WARN: [HD-RTLIN 1] C:\Users\giulio\Desktop\sumavg2-main\memory.vhdl(45) enable should be on the sensitivity list of the process
+ERROR: Unable to process your HDL design.  Please review Elaboration Messages. 
